@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #container {
+      width: 400px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    #content {
+      width: 2000px;
+      position: absolute;
+      left: 0;
+      transition: left 0.5s ease-in-out;
+    }
+
+    .item {
+      width: 400px;
+      height: 200px;
+      float: left;
+      margin-right: 10px;
+      background-color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div id="content">
+      <div class="item">Div 1</div>
+      <div class="item">Div 2</div>
+      <div class="item">Div 3</div>
+      <div class="item">Div 4</div>
+      <div class="item">Div 5</div>
+      <div class="item">Div 6</div>
+      <div class="item">Div 7</div>
+      <div class="item">Div 8</div>
+    </div>
+  </div>
+
+  <button onclick="scrollLeft()">Pre</button>
+  <button onclick="scrollRight()">Next</button>
+
+  <script>
+    var container = document.getElementById("container");
+    var content = document.getElementById("content");
+    var itemWidth = document.getElementsByClassName("item")[0].offsetWidth;
+    var visibleItemCount = 4;
+    var totalItemCount = document.getElementsByClassName("item").length;
+    var maxScroll = itemWidth * (totalItemCount - visibleItemCount);
+
+    function scrollLeft() {
+      var currentScroll = parseInt(content.style.left) || 0;
+      var newScroll = Math.max(currentScroll - itemWidth, -maxScroll);
+      content.style.left = newScroll + "px";
+    }
+
+    function scrollRight() {
+      var currentScroll = parseInt(content.style.left) || 0;
+      var newScroll = Math.min(currentScroll + itemWidth, 0);
+      content.style.left = newScroll + "px";
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,351 @@
+*{
+  margin: 0;padding: 0;box-sizing: border-box;
+}
+.menu {
+  display: flex;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  margin-top: -20px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  padding: 10px;
+  height: 60px  ;
+  /* text-decoration: none; */
+}
+
+.menu img {
+  height: 40px;
+  width: auto;
+  margin-right: 20px;
+}
+
+.menu h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu li {
+  margin: 0 10px;
+  text-align: center;
+}
+
+.menu a {
+  color: #000;
+  text-decoration: none;
+  padding: 10px;
+  transition: all 0.2s ease-in-out;
+}
+.left-side {
+  display: flex;
+  align-items: center;
+}
+
+.right-side {
+  display: flex;
+  align-items: center;
+}
+.menu li:hover {
+  background-color: #ffffff;
+}
+
+.menu li:hover > a {
+  color: #ff69b4;
+  text-decoration: none;
+}
+.fadeinup {
+  opacity: 0;
+  position: absolute;
+  bottom: 400px; /* Điều chỉnh khoảng cách với phần dưới của ảnh */
+  left: 15%; /* Điều chỉnh vị trí ngang của chữ */
+  transform: translateX(-50%);
+  animation: fadeinup 1s forwards;
+  animation-delay: 0.5s; /* Độ trễ 0.5s */
+  font-size: 60px; /* Điều chỉnh kích thước chữ */
+  font-family: Arial, sans-serif; /* Điều chỉnh kiểu chữ */
+}
+
+@keyframes fadeinup {
+  0% {
+      opacity: 0;
+      transform: translate(-50%, 20px);
+      color: rgba(0, 0, 0, 0); /* Màu chữ ban đầu là trong suốt */
+  }
+  100% {
+      opacity: 1;
+      transform: translate(-50%, 0);
+      color: rgba(14, 13, 13, 0.58); /* Màu chữ cuối cùng là đậm */
+  }
+}
+
+.button1{
+   border-radius: 50px;
+}
+
+button {
+ width: 160px;
+ height: 60px;
+  background-color: rgb(234, 97, 120);
+  color: rgb(248, 244, 244);
+  border: 1px solid pink;
+  padding: 10px 20px;
+ 
+}
+.fadeinup1 {
+  opacity: 0;
+  position: absolute;
+  bottom: 250px; /* Điều chỉnh khoảng cách với phần dưới của ảnh */
+  left: 5%; /* Điều chỉnh vị trí ngang của chữ */
+  transform: translateX(-50%);
+  animation: fadeinup 1s forwards;
+  animation-delay: 0.5s; /* Độ trễ 0.5s */
+  font-size: 20px; 
+  font-family: Arial, sans-serif; /* Điều chỉnh kiểu chữ */
+  color: white;
+}
+
+@keyframes fadeinup1 {
+  0% {
+      opacity: 0;
+      transform: translate(-50%, 20px);
+      color: rgba(255, 255, 255, 0); /* Màu chữ ban đầu là trong suốt */
+  }
+  100% {
+      opacity: 1;
+      transform: translate(-50%, 0);
+      color: rgb(251, 251, 251); /* Màu chữ cuối cùng là đậm */
+  }
+}
+.fadeinup2 {
+  opacity: 0;
+  position: absolute;
+  bottom: 350px; /* Điều chỉnh khoảng cách với phần dưới của ảnh */
+  left: 20%; /* Điều chỉnh vị trí ngang của chữ */
+  transform: translateX(-50%);
+  animation: fadeinup 1s forwards;
+  animation-delay: 0.5s; /* Độ trễ 0.5s */
+  font-size: 30px; 
+  font-family: Arial, sans-serif; /* Điều chỉnh kiểu chữ */
+  color: white;
+}
+
+@keyframes fadeinup2 {
+  0% {
+      opacity: 0;
+      transform: translate(-50%, 20px);
+      color: rgba(255, 255, 255, 0); /* Màu chữ ban đầu là trong suốt */
+  }
+  100% {
+      opacity: 1;
+      transform: translate(-50%, 0);
+      color: rgb(251, 251, 251); /* Màu chữ cuối cùng là đậm */
+  }
+}
+.container{
+  background-color: white;
+  display: flex;
+  position: relative;
+  margin-left: 60px;
+  margin-right: 10px;
+  width: 100%;
+  height: 130px;
+  margin-top: -60px;
+}
+.chu1{
+margin-top: 33px;
+margin-left:20px ;
+font-family: 'Montserrat', sans-serif;
+}
+.floating-div {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.anh1{
+  margin-left: 25px;
+}
+.anh2{
+  width: 300px;
+}
+.image-container1 {
+  position: relative;
+  display: inline-block;
+  margin-left: 20px;
+  margin-bottom: 50px;
+}
+
+.hover-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hover-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 15%;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: opacity 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  transform: translateY(0%); /* Chuyển thanh xuống dưới */
+}
+
+.image-container1:hover .hover-overlay {
+  opacity: 1;
+  transform: translateY(-80%); /* Hiển thị thanh lên trên */
+}
+.image-container1 a:hover{
+  text-decoration: none;
+  color: #ff69b4;
+}
+
+.buy-icon,
+.add-to-cart-icon {
+  display: inline-block;
+  color: #fff;
+  font-size: 20px;
+  margin: 5px;
+  padding: 5px 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  position: relative;
+  z-index: 1; /* Đặt z-index lớn hơn để chữ "Mua" nằm trên dòng line */
+}
+
+.buy-icon::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 210%;
+  background-color: #fff;
+  opacity: 0.6;
+  top: -18px;
+  right: 0;
+}
+
+.add-to-cart-icon::before {
+  content: none; /* Xóa nội dung của pseudo-element */
+}
+
+.buy-icon:hover,
+.add-to-cart-icon:hover {
+  color: #ff69b4;
+}
+
+.hover-overlay {
+  transition: opacity 0.3s, transform 0.3s; /* Thêm transition cho transform */
+}
+.break-word {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+.chu2{
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #010101;
+  margin-left: 25%;
+  text-decoration: none;
+}
+.image-container{
+  overflow: hidden;
+}
+.image-container img {
+  transition: transform 1.5s; /* Độ dài thời gian chuyển tiếp */
+  transform-origin: center center;
+}
+.image-container img:hover{
+  transform: scale(1.14);
+}
+.logo{
+  margin-left: 90px;
+
+}
+.footer-basic {
+  padding:40px 0;
+  background-color:#190606;
+  color:#a0a0a3;
+  margin-top: 100px;
+}
+
+.footer-basic ul {
+  padding:0;
+  list-style:none;
+  text-align:center;
+  font-size:18px;
+  line-height:1.6;
+  margin-bottom:0;
+}
+
+.footer-basic li {
+  padding:0 10px;
+}
+
+.footer-basic ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+}
+
+.footer-basic ul a:hover {
+  /* opacity:1; */
+  color: rgb(238, 47, 136);
+  transition: opacity 0.3s ease;
+} 
+
+.footer-basic .social {
+  text-align:center;
+  padding-bottom:25px;
+}
+
+.footer-basic .social a:hover{
+color: rgb(228, 28, 115);
+}
+
+.footer-basic .social > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:1px solid #ccc;
+  margin:0 8px;
+  color:inherit;
+  opacity:0.75;
+}
+
+.footer-basic .social > a:hover {
+  opacity:0.9;
+}
+
+.footer-basic .copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:13px;
+  color:#aaa;
+  margin-bottom:0;
+}
+.list-inline{
+  display: flex;
+  margin-left: 35%;
+}
+.footer-basic .list-inline a:hover{
+  color: rgb(228, 28, 115);
+  border: none;
+  }
