@@ -330,7 +330,7 @@ li.page-item a:hover {
 
 }
 .footer-basic {
-  padding:40px 0;
+  padding:30px 0;
   background-color:#190606;
   color:#a0a0a3;
   margin-top: 100px;
@@ -343,6 +343,7 @@ li.page-item a:hover {
   font-size:18px;
   line-height:1.6;
   margin-bottom:0;
+
 }
 
 .footer-basic li {
@@ -362,8 +363,9 @@ li.page-item a:hover {
 } 
 
 .footer-basic .social {
-  text-align:center;
+  /* text-align:center; */
   padding-bottom:25px;
+  margin-left: 35%;
 }
 
 .footer-basic .social a:hover{
@@ -390,10 +392,11 @@ color: rgb(228, 28, 115);
 
 .footer-basic .copyright {
   margin-top:15px;
-  text-align:center;
+  /* text-align:center; */
   font-size:13px;
   color:#aaa;
   margin-bottom:0;
+  margin-left: 37%;
 }
 .list-inline{
   display: flex;
